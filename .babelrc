@@ -1,0 +1,31 @@
+﻿{
+    "plugins": [
+        "syntax-trailing-function-commas",
+        "transform-strict-mode",
+        "transform-exponentiation-operator",
+        "transform-async-to-generator",
+        "transform-es2015-destructuring",
+        "transform-es2015-parameters",
+        "transform-es2015-duplicate-keys",
+        "transform-es2015-modules-commonjs",
+        "transform-exponentiation-operator",
+        "transform-runtime",
+        ["module-resolver", {
+          "root": ["."],
+          "alias": {
+            "test": "./test"
+          }
+        }]
+    ],
+
+    "presets": [
+      ["es2015", {"modules": false}]
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+}

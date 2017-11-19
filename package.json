@@ -2,6 +2,7 @@
   "name": "express-restful-starter",
   "version": "0.0.2",
   "private": false,
+  "main": "server.js",
   "repository" : {
     "type" : "git",
     "url" : "git@github.com:nutboltu/express-restful-starter.git"
@@ -12,26 +13,38 @@
   },
   "keywords": [
     "node express starter",
-    "express restapi starter",
+    "express rest api starter",
     "express es6"
   ],
   "author": "Farhad Yasir",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.1.5",
-    "bcrypt": "^1.0.1",
-    "body-parser": "^1.16.1",
-    "express": "^4.14.0",
-    "express-validator":"^3.1.0",
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-validator":"^4.3.0",
     "jwt-simple": "^0.5.1",
     "lodash": "^4.17.2",
-    "winston": "^2.3.0"
+    "winston": "^2.4.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb-base": "^11.1.0",
-    "nodemon": "^1.11.0"
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-rewire": "^1.1.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-template": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "nodemon": "^1.12.1"
   }
 }
