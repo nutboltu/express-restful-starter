@@ -1,5 +1,5 @@
-import responseHelper  from '../utilities/response.helper';
-import userModelHandler from '../models/handlers/user.model.handler';
+import responseHelper  from 'utilities/response.helper';
+import userModelHandler from 'models/handlers/user.model.handler';
 
 const add = (req, res) => {
   userModelHandler.add(req.body, (err, user) => {

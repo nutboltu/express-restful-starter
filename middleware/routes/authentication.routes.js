@@ -1,8 +1,8 @@
 import express from 'express';
 
-import authenticationController from '../../controllers/authentication.controller';
-import validationChecker from '../../middleware/validators/validation.checker';
-import validationError from '../../middleware/validators/validation.error';
+import authenticationController from 'controllers/authentication.controller';
+import validationChecker from 'middleware/validators/validation.checker';
+import validationError from 'middleware/validators/validation.error';
 
 const validateAuthenticateParameter = (req, res, next) => {
   validationChecker.areRequired(req, ['payload']);

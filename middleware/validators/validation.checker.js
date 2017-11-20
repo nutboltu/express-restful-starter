@@ -1,5 +1,5 @@
-import  config from '../../config';
-import { ERROR_STATUS } from '../../utilities/constants';
+import  config from 'config';
+import { ERROR_STATUS } from 'utilities/constants';
 
 const areRequired = (req, params) => {
   params.forEach((param) => {

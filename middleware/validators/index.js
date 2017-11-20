@@ -1,5 +1,5 @@
 import expressValidator from 'express-validator';
-import jwtTokenHelper from '../../utilities/jwt.token.helper';
+import jwtTokenHelper from 'utilities/jwt.token.helper';
 
 const hasValidToken = (token) => {
   if (token) {

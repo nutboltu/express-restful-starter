@@ -3,9 +3,9 @@
   "version": "0.0.2",
   "private": false,
   "main": "server.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "git@github.com:nutboltu/express-restful-starter.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nutboltu/express-restful-starter.git"
   },
   "scripts": {
     "start": "NODE_ENV=development nodemon server.js --exec babel-node --presets es2015",
@@ -23,7 +23,7 @@
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "express-validator":"^4.3.0",
+    "express-validator": "^4.3.0",
     "jwt-simple": "^0.5.1",
     "lodash": "^4.17.2",
     "winston": "^2.4.0"

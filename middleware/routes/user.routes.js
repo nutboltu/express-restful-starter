@@ -1,8 +1,8 @@
 import express from 'express';
 
-import userController from '../../controllers/user.controller';
-import validationChecker from '../../middleware/validators/validation.checker';
-import validationError from '../../middleware/validators/validation.error';
+import userController from 'controllers/user.controller';
+import validationChecker from 'middleware/validators/validation.checker';
+import validationError from 'middleware/validators/validation.error';
 
 const validateUserParameter = (req, res, next) => {
   validationChecker.areRequired(req, ['firstName', 'lastName', 'email', 'password']);

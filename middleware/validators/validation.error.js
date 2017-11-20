@@ -1,5 +1,5 @@
 import * as logger from 'winston';
-import errorHandler from '../../utilities/error.handler';
+import errorHandler from 'utilities/error.handler';
 
 const processErrors = (req, res, next) => {
   const validationErrors = req.validationErrors();

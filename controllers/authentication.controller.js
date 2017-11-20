@@ -1,6 +1,6 @@
-import responseHelper  from '../utilities/response.helper';
-import jwtTokenHelper from '../utilities/jwt.token.helper';
-import errorHandler from '../utilities/error.handler';
+import responseHelper  from 'utilities/response.helper';
+import jwtTokenHelper from 'utilities/jwt.token.helper';
+import errorHandler from 'utilities/error.handler';
 
 const authenticate = (req, res) => {
   try {
