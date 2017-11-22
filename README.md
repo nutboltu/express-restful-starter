@@ -1,6 +1,6 @@
 # Express RESTful Starter
 
-This is a starter kit for building RESTful APIs with ES6 and Express framework
+This is a starter kit for building RESTful APIs with ES6, Express framework and Passport
 
 Getting started
 ---------------
@@ -26,24 +26,22 @@ npm start:prod
 The api service runs on port 3000. We implemented following apis in this starter kit
 
 ```
-BASE_PATH: http://localhost:3000/api/1.0/
+BASE_PATH: http://localhost:3000/api/
 
 Authentication
-    POST    /authenticate
+    POST    /login
             Request:
                 body:{
-                    payload: your payload for access token
+                    username: // for mock-data farhad.yasir
+                    password: // for mock-data 123456
                 }
             Response:
             {
-                token: your access token
+                user: // a demo user info
             }
-Users
+Users **You must be loggedIn before calling these apis**
     POST    /users
             Request:
-                header: {
-                Authorization: token you received from /authenticate api
-                }
                 body:{
                     firstName: user's first name,
                     lastName: user's last name,
@@ -60,10 +58,6 @@ Users
                 password: user's password,
             }
     PUT     /users/:id
-            Request:
-               header: {
-                Authorization: token you received from /authenticate api
-               }
             Response:
             {
                 // returns same body for now. You need to update code in
@@ -74,10 +68,6 @@ Users
                 password: user's password,
             }
     GET     /users/:offset/:limit
-            Request:
-               header: {
-                Authorization: token you received from /authenticate api
-               }
             Response:
             {
                 // returns offset and limit for now. You need to update code in
@@ -86,10 +76,6 @@ Users
                 limit: url's limit,
             }
     GET     /users/:id
-            Request:
-               header: {
-                Authorization: token you received from /authenticate api
-               }
             Response:
             {
                 // returns id for now. You need to update code in
@@ -97,10 +83,6 @@ Users
                id
             }
     DELETE  /users/:id
-            Request:
-               header: {
-                Authorization: token you received from /authenticate api
-               }
             Response:
             {
                 // returns id for now. You need to update code in
@@ -109,7 +91,7 @@ Users
             }
 ```
 
-Starter kit layout
+Starter Kit Layout
 ------------------
 
 ```
@@ -117,23 +99,21 @@ Starter kit layout
 |   +- env                    --> environment dependable configuration files
 |     +- common.js            --> common configurations for all environment
 |     +- development.js       --> configurations for development
-|      +- production.js       --> configurations for production    
+|     +- production.js        --> configurations for production
 |   +- index.js               --> configuration file where all configurations are concatenated
 +- controllers                --> controller files
-+- middlewares                --> consists all middlewares (e.g: routes, validator)
-|   +- routes                 --> REST api routers
-|   +- validators             --> customize express validators  
-+- models                     --> models directories that communicate with the database
-|   +- handlers               --> database access layer that connects with the db models
-|   +- db.connection.js       --> connect with mongodb
-+- node_modules               --> development dependencies node modules
 +- routes                     --> REST api routers
++- models                     --> models directories that communicate with the database
+|   +- {Entity Name}          --> database access layer that connects with the db models
++- node_modules               --> development dependencies node modules
 +- utilities                  --> utilities files
+|   +- authentication         --> uses passport as authentication
+|   +- constants              --> consists application constants
+|   +- handlers               --> any kinds of handlers (e.g: errorHandler, responseHandler)
+|   +- validators             --> customize express validators
 +- server.js                  --> application run file
-+- package.json               --> node package configuration file
++- package.json               --> node package
 ```
-
-
 
 ## Licence
 MIT licence
