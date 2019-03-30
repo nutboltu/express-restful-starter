@@ -1,6 +1,6 @@
 {
   "name": "express-restful-starter",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": false,
   "main": "server.js",
   "repository": {
@@ -19,7 +19,6 @@
   "author": "Farhad Yasir",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.6.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
