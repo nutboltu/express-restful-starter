@@ -2,16 +2,17 @@
 
 This is a starter kit for building RESTful APIs with ES6, Express framework and Passport
 
-Getting started
+## Getting started
+
 ---------------
 
-```
+```sh
 # Clone the repository
 git clone git@github.com:nutboltu/express-restful-starter.git
 cd express-restful-starter
 
 # Remove this git config
-rm -rf .git 
+rm -rf .git
 
 # Install dependencies
 npm i
@@ -91,8 +92,9 @@ Users **You must be loggedIn before calling these apis**
             }
 ```
 
-Starter Kit Layout
-------------------
+## Starter Kit Layout
+
+---------------
 
 ```
 +- config
@@ -116,4 +118,5 @@ Starter Kit Layout
 ```
 
 ## Licence
+
 MIT licence

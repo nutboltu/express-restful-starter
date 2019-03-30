@@ -1,5 +1,4 @@
 import passport from 'passport';
-import { Strategy } from 'passport-local';
 import responseHandler from 'utilities/handlers/responseHandler';
 import errorHandler from 'utilities/handlers/errorHandler';
 import UserModelHandler from 'models/Users/UserModelHandler';
