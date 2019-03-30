@@ -4,7 +4,6 @@ import userController from 'controllers/userController';
 import validationChecker from 'utilities/validators/validationChecker';
 import validationError from 'utilities/validators/validationError';
 import { isAuthenticated } from 'utilities/authentication';
-import { ensureLoggedIn } from 'connect-ensure-login';
 
 const validateUserParameter = (req, res, next) => {
   validationChecker.areRequired(req, ['firstName', 'lastName', 'email', 'password']);

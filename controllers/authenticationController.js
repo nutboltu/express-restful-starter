@@ -3,7 +3,7 @@ import Authenticator from 'utilities/authentication';
 
 const login = (req, res, next) => {
   const authenticator = new Authenticator();
-  authenticator.authenticate('local', function(err, user, info) {
+  authenticator.authenticate('local', function(err, user) {
     if (err) {
       responseHandler.res(err, null, res);
     }
